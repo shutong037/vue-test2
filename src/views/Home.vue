@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import { formatDate } from '@/utils/common.js'
+
 export default {
   name: 'Home',
   data () {
@@ -18,7 +20,8 @@ export default {
   },
   methods: {
     init () {
-      console.log('123')
+      const time = formatDate(new Date())
+      console.log(time)
     }
   }
 }
